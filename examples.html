@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>jsAlert - JavaScript Drop-Down Notification Library with No Dependencies </title>
+  <meta name="description" content="A Small Pure JavaScript Drop-Down Notification Library with No Dependencies ">
+  <meta name="author" content="zacharymcgee">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <div class="header">
+    <a href="index.html"><img src="images/logo.png"></a>
+    <div class="header-menu">
+      <ul>
+        <li><a href="start.html">Getting Started</a></li>
+        <li><a href="examples.html">Examples</a></li>
+        <li><a href="docs.html">Documentation</a></li>
+        <li><a href="https://github.com/ZacharyMcGee/jsAlert">Source</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="getting-started" style="background-color: #ececec;padding-left: 20px;padding-right:20px;padding-bottom:20px;padding-top:5px;margin-top: 90px;border-radius: 5px;">
+      <h1>Examples</h1>
+      <div class="examples-form">
+      <form action="">
+        <h4>Message</h4>
+        <input id="message" type="text" name="fname"><br>
+        <div class="form-settings"><h4>Settings</h4><input id="settings" style="width: 20px;" type="checkbox"></div>
+        <div id="form-settings-options" class="form-settings-options hide">
+        Type: <select id="type" style="width: 100%;">
+          <option value="default">Default</option>
+          <option value="Alert">Alert</option>
+          <option value="Error">Error</option>
+          <option value="Success">Success</option>
+          <option value="Warning">Warning</option>
+        </select>
+        <br>
+        Dismiss: <select id="dismiss" style="width: 100%;">
+          <option value="default">Default</option>
+          <option value="true">True</option>
+          <option value="false">False</option>
+        </select>
+        Callback: <input id="callback" type="text" name="lname"><br>
+        Time: <input id="time" type="text" name="lname"><br>
+        Animate: <select id="animate" style="width: 100%;">
+          <option value="default">Default</option>
+          <option value="true">True</option>
+          <option value="false">False</option>
+        </select>
+        <div class="form-settings"><h4>Style</h4><input id="style" style="width: 20px;" type="checkbox"></div>
+        <div id="form-settings-style" class="form-settings-style hide">
+          Color: <input id="color" type="text" name="lname"><br>
+          Background Color: <input id="bgcolor" type="text" name="lname"><br>
+          Border: <input id="border" type="text" name="lname"><br>
+          Width: <input id="width" type="text" name="lname"><br>
+          Padding Top: <input id="paddingtop" type="text" name="lname"><br>
+          Padding Left: <input id="paddingleft" type="text" name="lname"><br>
+          Padding Right: <input id="paddingright" type="text" name="lname"><br>
+          Padding Bottom: <input id="paddingbottom" type="text" name="lname"><br>
+          Margin Top: <input id="margintop" type="text" name="lname"><br>
+          Margin Left: <input id="marginleft" type="text" name="lname"><br>
+          Margin Right: <input id="marginright" type="text" name="lname"><br>
+          Margin Bottom: <input id="marginbottom" type="text" name="lname"><br>
+          z-index: <input id="zindex" type="text" name="lname"><br>
+
+        </div>
+        </div>
+      </form>
+      </div>
+      <div class="examples-result">
+        <h4>Result</h4>
+        <textarea id="result" readonly>jsAlert.Alert('');</textarea>
+        <button id="test" onClick="testAlert()">Test Alert</button>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Website and Library by <a href="https://www.zmcgee.com/">Zachary McGee</a></p>
+    </div>
+  </div>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="build/jsalert.min.js"></script>
+  <script src="js/examplebuilder.js"></script>
+  <link rel="stylesheet" href="build/jsalert.min.css"/>
+</body>
+</html>

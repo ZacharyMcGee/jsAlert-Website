@@ -1,0 +1,238 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>jsAlert - JavaScript Drop-Down Notification Library with No Dependencies </title>
+  <meta name="description" content="A Small Pure JavaScript Drop-Down Notification Library with No Dependencies ">
+  <meta name="author" content="zacharymcgee">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <div class="header">
+    <a href="index.html"><img src="images/logo.png"></a>
+    <div class="header-menu">
+      <ul>
+        <li><a href="start.html">Getting Started</a></li>
+        <li><a href="examples.html">Examples</a></li>
+        <li><a href="docs.html">Documentation</a></li>
+        <li><a href="https://github.com/ZacharyMcGee/jsAlert">Source</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="getting-started" style="background-color: #ececec;padding-left: 20px;padding-right:20px;padding-bottom:20px;padding-top:5px;margin-top: 90px;border-radius: 5px;">
+      <h1>Alerts</h1>
+      <h2>.Alert();</h2>
+      <div class="code">
+        <p>jsAlert.Alert("Title");</p>
+      </div>
+      <br>
+      <div class="code">
+        <p>jsAlert.Alert("Title", {settings});</p>
+      </div>
+
+      <h2>.Error();</h2>
+      <div class="code">
+        <p>jsAlert.Error("Title");</p>
+      </div>
+      <br>
+      <div class="code">
+        <p>jsAlert.Error("Title", {settings});</p>
+      </div>
+
+      <h2>.Success();</h2>
+      <div class="code">
+        <p>jsAlert.Success("Title");</p>
+      </div>
+      <br>
+      <div class="code">
+        <p>jsAlert.Success("Title", {settings});</p>
+      </div>
+
+      <h2>.Warning();</h2>
+      <div class="code">
+        <p>jsAlert.Warning("Title");</p>
+      </div>
+      <br>
+      <div class="code">
+        <p>jsAlert.Warning("Title", {settings});</p>
+      </div>
+
+      <h1>Settings</h1>
+      <h2>Default Settings</h2>
+      <div style="margin-top: 10px;" class="code">
+        <p>
+          settings: {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            id: null,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            type: 'default',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            dismiss: true,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            callback: false,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            time: 2,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            animate: true,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            style: {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             color: "",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             bgcolor: "",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;             border: "",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             width: "",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             paddingtop: "",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             paddingleft: "",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             paddingright: "",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             paddingbottom: "",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             margintop: "",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             marginleft: "",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             marginright: "",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             marginbottom: "",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             zindex: "",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            },<br>
+          },<br>
+        </p>
+      </div>
+
+      <h2>settings{id:string}</h2>
+      <div style="margin-top: 10px;" class="code">
+        <p>Automatically generated and should not be set manually. Generated through createAlert();</p>
+      </div>
+      <br>
+      <h2>settings{type:string}</h2>
+      <div style="margin-top: 10px;" class="code">
+        <p>Automatically set and should not be set manually.</p>
+      </div>
+      <br>
+      <h2>settings{dismiss:boolean}</h2>
+      <div style="margin-top: 10px;" class="code">
+        <p>Display a dismiss button, if false, alert destroys after {time:number} seconds.</p>
+      </div>
+      <br>
+      <h2>settings{callback:string}</h2>
+      <div style="margin-top: 10px;" class="code">
+        <p>Function to call after dismissing the alert.</p>
+      </div>
+      <br>
+      <h2>settings{time:number}</h2>
+      <div style="margin-top: 10px;" class="code">
+        <p>Time in seconds to destroy the alert. </p>
+      </div>
+      <br>
+      <h2>settings{animate:boolean}</h2>
+      <div style="margin-top: 10px;" class="code">
+        <p>Adds the drop-down animation and fade out animation.</p>
+      </div>
+      <br>
+      <h2>settings{style:{Object}}</h2>
+      <div style="margin-top: 10px;" class="code">
+        <p>Overrides the default style settings.</p>
+      </div>
+      <br>
+      <h1>Style</h1>
+      <div style="margin-top: 10px;" class="code">
+        <p>style: {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             color: "",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             bgcolor: "",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             border: "",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             width: "",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             paddingtop: "",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             paddingleft: "",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             paddingright: "",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             paddingbottom: "",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             margintop: "",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             marginleft: "",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             marginright: "",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             marginbottom: "",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             zindex: "",<br>
+                    },<br>
+        </p>
+      </div>
+
+      <h2>style{color:string}</h2>
+      <div style="margin-top: 10px;" class="code">
+        <p>The text color.</p>
+      </div>
+      <br>
+
+      <h2>style{bgcolor:string}</h2>
+      <div style="margin-top: 10px;" class="code">
+        <p>The background color.</p>
+      </div>
+      <br>
+
+      <h2>style{border:string}</h2>
+      <div style="margin-top: 10px;" class="code">
+        <p>The border style.</p>
+      </div>
+      <br>
+
+      <h2>style{width:string}</h2>
+      <div style="margin-top: 10px;" class="code">
+        <p>The width of the notification, default is 100%.</p>
+      </div>
+      <br>
+
+      <h2>style{paddingtop:string}</h2>
+      <div style="margin-top: 10px;" class="code">
+        <p>The top padding, default is 10px.</p>
+      </div>
+      <br>
+
+      <h2>style{paddingleft:string}</h2>
+      <div style="margin-top: 10px;" class="code">
+        <p>The left padding, default is 0px.</p>
+      </div>
+      <br>
+
+      <h2>style{paddingright:string}</h2>
+      <div style="margin-top: 10px;" class="code">
+        <p>The right padding, default is 0px.</p>
+      </div>
+      <br>
+
+      <h2>style{paddingbottom:string}</h2>
+      <div style="margin-top: 10px;" class="code">
+        <p>The bottom padding, default is 10px.</p>
+      </div>
+      <br>
+
+      <h2>style{margintop:string}</h2>
+      <div style="margin-top: 10px;" class="code">
+        <p>The top margin, default is 0px.</p>
+      </div>
+      <br>
+
+      <h2>style{marginleft:string}</h2>
+      <div style="margin-top: 10px;" class="code">
+        <p>The left margin, default is 0px.</p>
+      </div>
+      <br>
+
+      <h2>style{marginright:string}</h2>
+      <div style="margin-top: 10px;" class="code">
+        <p>The right margin, default is 0px.</p>
+      </div>
+      <br>
+
+      <h2>style{marginbottom:string}</h2>
+      <div style="margin-top: 10px;" class="code">
+        <p>The bottom margin, default is 0px.</p>
+      </div>
+      <br>
+
+      <h2>style{zindex:string}</h2>
+      <div style="margin-top: 10px;" class="code">
+        <p>The z-index, default is 0.</p>
+      </div>
+      <br>
+    </div>
+    <div class="footer">
+      <p>Website and Library by <a href="https://www.zmcgee.com/">Zachary McGee</a></p>
+    </div>
+  </div>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="build/jsalert.min.js"></script>
+  <link rel="stylesheet" href="build/jsalert.min.css"/>
+</body>
+</html>

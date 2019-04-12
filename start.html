@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>jsAlert - JavaScript Drop-Down Notification Library with No Dependencies </title>
+  <meta name="description" content="A Small Pure JavaScript Drop-Down Notification Library with No Dependencies ">
+  <meta name="author" content="zacharymcgee">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <div class="header">
+    <a href="index.html"><img src="images/logo.png"></a>
+    <div class="header-menu">
+      <ul>
+        <li><a href="start.html">Getting Started</a></li>
+        <li><a href="examples.html">Examples</a></li>
+        <li><a href="docs.html">Documentation</a></li>
+        <li><a href="https://github.com/ZacharyMcGee/jsAlert">Source</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="getting-started" style="background-color: #ececec;padding-left: 20px;padding-right:20px;padding-bottom:20px;padding-top:5px;margin-top: 90px;border-radius: 5px;">
+      <h2>Download:</h2>
+      <div class="download">
+        <div class="download-library">
+          <p>Minified Javascript and CSS for installation</p>
+          <a href="build/jsAlert-build.zip"><button><i class="fas fa-cloud-download-alt"></i> Download Library</button></a>
+        </div>
+        <div class="download-source">
+          <p>Source code for extention and customization</p>
+          <a href="https://github.com/ZacharyMcGee/jsAlert/archive/master.zip"><button><i class="fas fa-cloud-download-alt"></i> Download Source</button></a>
+        </div>
+      </div>
+      <h2>CDN:</h2>
+      <p>JavaScript</p>
+      <div class="code">
+        <p>&lt;script src="https://www.jsalert.com/build/jsalert.min.js"&gt;&lt;/script&gt;</p>
+      </div>
+      <p style="margin-top:10px;">CSS</p>
+      <div class="code">
+        <p>&lt;link rel="stylesheet" href="https://www.jsalert.com/build/jsalert.min.css"/&gt;</p>
+      </div>
+      <h1>Examples</h1>
+
+      <h2>Success Message:</h2>
+      <div class="code">
+        <p>jsAlert.Success("Success Message!");</p>
+      </div>
+      <button onclick="jsAlert.Success('Success Message!', {style:{margintop:'60px',zindex:'0'}})">Test Success Message</button>
+
+      <h2>Error Message:</h2>
+      <div style="margin-top: 10px;" class="code">
+        <p>jsAlert.Error("Error Message!");</p>
+      </div>
+      <button onclick="jsAlert.Error('Error Message!', {style:{margintop:'60px',zindex:'0'}})">Test Error Message</button>
+
+      <h2>Customized Message:</h2>
+      <div style="margin-top: 10px;" class="code">
+        <p>jsAlert.Error('<i class=\'fas fa-paint-brush\'></i> This has been customized to match this website!', {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;style:{ <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  bgcolor:'#ff6327',<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  border:'1px solid #e25823' <br>
+          });</p>
+      </div>
+      <button onclick="jsAlert.Alert('<i class=\'fas fa-paint-brush\'></i> This has been customized to match this website!', {style:{zindex: '0', margintop:'60px', bgcolor:'#ff6327', border:'1px solid #e25823'}})">Test Customized Message</button>
+    </div>
+    <div class="footer">
+      <p>Website and Library by <a href="https://www.zmcgee.com/">Zachary McGee</a></p>
+    </div>
+  </div>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="build/jsalert.min.js"></script>
+  <link rel="stylesheet" href="build/jsalert.min.css"/>
+</body>
+</html>
